@@ -4,7 +4,7 @@ import { PCD, PCDPackage, SerializedPCD } from "@pcd/pcd-types";
 import { requireDefinedParameter } from "@pcd/util";
 import JSONBig from "json-bigint";
 import { v4 as uuid } from "uuid";
-import c_secp256r1 from "../circuits/secp256r1/target/secp256r1.json";
+import c_secp256r1 from "../circuits/target/ecdsa_secp256r1.json";
 import { Secp256R1CardBody } from "./CardBody";
 
 let depsInitializedPromise: Promise<void> | undefined;
